@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Mono", monospace;
+
+}
+
+body {
+    background-color:  #F5EFE6;
+
+}
+
+
+roboto-mono-font {
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+
+
+.main-content {
+    height: 100vh;
+    width: 100vw;
+    margin: auto;
+}
+
+/*
+div {
+border-style: solid;
+}*/
+
+.header {
+display: flex;
+text-align: center;
+padding: 20px;
+font-size: 2em;
+background-color: #E8DFCA;
+border: 0px;
+overflow: hidden;
+flex-direction: column;
+}
+
+.logo {
+display: flex;
+flex-direction: row;
+justify-content: center;
+background-color: transparent;
+}
+
+.logo img {
+    background-color: transparent;
+    padding: 5px;
+}
+
+.header h1, .header p {
+    background-color: transparent;
+}
+
+
+.geo-title {
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+
+.zone-container {
+    display: flex;
+    padding: 20px;
+    column-gap: 50px;
+    flex-direction: column;
+    row-gap: 20px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.row {
+display: flex;
+width: 100%;
+gap: 20px;
+justify-content: center;
+}
+
+.zone-btn {
+    flex: 1;
+    text-align: center;
+    border-style: solid #1A4D2E;
+    border-radius: 50px;
+    padding: 15px;
+    background-color: #1A4D2E;
+    text-decoration: none;
+    color: #F5EFE6;
+    font-weight: 500;
+    max-width: 200px;
+}
+
+.disclaimer {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    justify-content: center;
+}
+
+.disclaimer p {
+    max-width: 650px;
+    text-align: center;
+}
+
+
+.footer {
+    position: absolute; 
+    bottom: 0; 
+    width: 100vw;
+    display: flex;
+    padding: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    background-color:#1A4D2E;
+}
+
+.footer p {
+    background-color: transparent;
+    flex: 1;
+    text-align: center;
+    color: #F5EFE6;
+}
+
+
+/* Mobile stuff*/
+
+@media (max-width: 860px) {
+
+    .header {
+        font-size: 1.5em;
+        }
+        
+    .logo {
+        flex-direction: column;
+        align-items: center;
+        }
+
+    .logo img {
+        width: auto;
+        height: 150px;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .zone-btn {
+        min-width: 100%;
+        font-size: 1.3em;
+    }
+    
+    .disclaimer p {
+        width: 100%;
+        font-size: 1.2em;
+    }
+
+    .footer {
+        position: relative; 
+    }
+}
