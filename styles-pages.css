@@ -67,6 +67,13 @@ nav > * {
     flex-wrap: wrap;
 }
 
+#back-btn {
+    background-color: white;
+    padding: 3px 8px 3px 8px;
+    color: #1A4D2E;
+    font-weight: 700;
+    border-radius: 30px;
+}
 
 .section-title {
     text-align: center;

@@ -69,14 +69,51 @@ nav > * {
 
 #back-btn {
     background-color: white;
+    padding: 3px 8px 3px 8px;
+    color: #1A4D2E;
+    font-weight: 700;
+    border-radius: 30px;
 }
 
 .section-title {
     text-align: center;
-    padding: 20px;
+    padding: 40px;
 }
 
 
+
+.gallery {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    max-width: 70vw;
+}
+
+.gallery > * {
+    border-radius: 30px;
+    background-color: #1A4D2E;
+    padding: 8px;
+
+}
+
+article {
+    margin: auto;
+    max-width: 70vw;
+    padding: 20px 0 20px 0;
+}
+
+article > * {
+    padding: 5px;
+}
+
+.data {
+    background-color: white;
+    border-radius: 30px;
+    padding: 20px;
+    margin: 20px 0px 20px 0px;
+
+}
 
 
 footer {
