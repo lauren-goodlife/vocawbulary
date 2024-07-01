@@ -58,6 +58,8 @@ nav {
     display: flex;
     justify-content: space-evenly;
     padding: 10px;
+    font-size: 0.5em;
+    background-color: #1A4D2E;
 }
 
 nav > * {
@@ -127,7 +129,17 @@ footer p {
 
 /* Mobile stuff*/
 
-@media (max-width: 860px) {
+
+@media (min-width: 769px) and (max-width: 999px) {
+
+    .grid-item {
+        flex: 1 1 calc(50% - 20px); /* 33.333% to create 3 columns; subtracting the gap */
+    }
+
+}
+
+
+@media (max-width: 768px) {
 
     header {
         font-size: 1.2em;
@@ -151,12 +163,73 @@ footer p {
     footer {
         position: relative; 
     }
+
+    .grid-container {
+        flex-direction: column;
+        width: 100%;
+
+    }
+    
+    .grid-item {
+        flex: 1; /* 33.333% to create 3 columns; subtracting the gap */
+    }
+    
+    .grid-item img {
+        border-radius: 20px;
+        width: 100%;
+    }
+
 }
 
 
-/*CSS Specific for geographic zone pages*/
-nav {
-    font-size: 0.5em;
-    background-color: #1A4D2E;
+@media (max-width: 999px) {
+
+    /* Style the navigation menu */
+    nav {
+        overflow: hidden;
+        position: relative;
+        min-height: 50px;
+    }
+
+  
+  /* Style navigation menu links */
+  nav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  /* Style the hamburger menu */
+  nav a.icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  nav a:hover {
+    color: white;
+  }
+  
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+    
+    nav > * {
+    display: hidden;
+    }
+    
 }
+
+
+
+
+
+
 

@@ -8,21 +8,29 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
 <main>
     <header>
-        <div class="logo"><a href="../index.html"><img src="../images/raven.webp" alt="Just a regular crow" width="auto" height="80px"></a>        
+        <div class="logo"><a href="../index.html"><img src="../images/raven.webp" alt="Just a regular crow" width="auto" height="150px"></a>        
         <h1>Europe</h1>
         </div>
     </header>
     <nav>
-        <a id ="back-btn" href="../index.html"> < Back to home</a>
-        <a href="../geo-zone/asia.html">Asia</a> 
-        <a href="../geo-zone/north-america.html">North America</a>
-        <a href="../geo-zone/south-america.html">South America</a> 
-        <a href="../geo-zone/africa.html">Africa</a>
-        <a href="../geo-zone/oceania.html">Oceania</a> 
+        <div id="myLinks">
+            <a id ="back-btn" href="../index.html" class="active"> < Back to home</a>
+            <a href="../geo-zone/asia.html">Asia</a> 
+            <a href="../geo-zone/north-america.html">North America</a>
+            <a href="../geo-zone/south-america.html">South America</a> 
+            <a href="../geo-zone/africa.html">Africa</a>
+            <a href="../geo-zone/oceania.html">Oceania</a> 
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+  </a>
     </nav>
 
     <h2 class="section-title">Does your crow look like one of this fellas?</h2>
@@ -86,6 +94,9 @@
         <p>image credits @designollo</p>
     </footer>
 </main>
+
+
+<script src="../script.js"></script>
 
 </body>
 

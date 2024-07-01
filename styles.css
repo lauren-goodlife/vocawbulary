@@ -123,14 +123,30 @@ input {
 
 .disclaimer {
     display: flex;
-    width: 100%;
     padding: 20px;
     justify-content: center;
+    flex-direction: row;
+    margin: auto;
+    gap: 20px;
+    max-width: 60vw;
 }
 
-.disclaimer > * {
-    max-width: 650px;
-    text-align: center;
+.corvo {
+    flex: 1;
+    border-radius: 20px;
+    overflow: hidden; /* Aggiungi overflow nascosto per mantenere il bordo arrotondato */
+}
+
+.corvo img {
+    width: 100%;
+    height: auto; /* Rende l'immagine responsiva */
+    border-radius: 20px; /* Mantiene i bordi arrotondati per l'immagine */
+}
+
+.para {
+    flex: 7; /* Correzione della proporzione */
+    display: flex;
+    align-items: center; /* Allinea verticalmente il testo */
 }
 
 
@@ -156,7 +172,7 @@ footer p {
 
 /* Mobile stuff for homepage*/
 
-@media (max-width: 860px) {
+@media (max-width: 768px) {
 
     header {
         font-size: 1.2em;
@@ -186,20 +202,50 @@ footer p {
         font-size: 1.3em;
     }
     
-    .disclaimer p {
-        width: 100%;
-        font-size: 1em;
+    .disclaimer {
+        flex-direction: column;
+        max-width: 100vw;
+        align-items: center;
     }
 
     footer {
         position: relative; 
     }
+
+
+    .search-container {
+        flex-direction: column;
+        gap: 10px;
+        }
+        
+        input {
+            width: 90vw;
+            border-radius: 30px;
+            padding: 10px;
+            margin-right: 20px;
+            border-style: solid;
+            border-color: #1A4D2E;
+        }
+        
+        #searchButton {
+            width: 90vw;
+            padding: 15px;
+        
+        }
 }
 
 
 
 
+@media (min-width: 769px) and (max-width: 999px) {
 
+    .disclaimer {
+        max-width: 90vw;
+    }
+
+
+    
+}
 
 
 

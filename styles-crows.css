@@ -58,6 +58,8 @@ nav {
     display: flex;
     justify-content: space-evenly;
     padding: 10px;
+    font-size: 0.5em;
+    background-color: #1A4D2E;
 }
 
 nav > * {
@@ -80,17 +82,18 @@ nav > * {
     padding: 40px;
 }
 
-
-
 .gallery {
     margin: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: row;
     max-width: 70vw;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .gallery > * {
+    flex: 1;
     border-radius: 30px;
     background-color: #1A4D2E;
     padding: 8px;
@@ -136,7 +139,7 @@ footer p {
 
 /* Mobile stuff*/
 
-@media (max-width: 860px) {
+@media (max-width: 768px) {
 
     header {
         font-size: 1.2em;
@@ -160,12 +163,27 @@ footer p {
     footer {
         position: relative; 
     }
+/*
+    .gallery {
+        max-width: 100vw;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+
+    .gallery > * {
+        flex: 1 1 calc(50% - 20px);
+        border-radius: 30px;
+        background-color: #1A4D2E;
+        padding: 8px;
+    
+    }*/
+
+    article {
+        max-width: 100vw;
+        padding: 30px;
+    }
+
 }
 
-
-/*CSS Specific for geographic zone pages*/
-nav {
-    font-size: 0.5em;
-    background-color: #1A4D2E;
-}
 
