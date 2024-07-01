@@ -101,9 +101,22 @@ nav a.icon {
     padding: 5px;
 }
 
+.grid-item h2 {
+    font-size: 1.2em;
+}
+
+.grid-item p {
+padding: 3px;
+}
+
+
 .grid-item img {
     border-radius: 20px;
     width: 100%;
+}
+
+.grid-container:nth-last-child() {
+    width: 800px;
 }
 
 footer {

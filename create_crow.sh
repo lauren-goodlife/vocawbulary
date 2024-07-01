@@ -1,9 +1,18 @@
-<!DOCTYPE html>
+#!/bin/bash
+
+# Lista delle specie di corvi
+species=("hooded-crow" "white-necked-raven" "pied-crow" "little-crow" "american-crow" "cape-crow" "northwestern-crow" "common-raven" "australian-raven" "thick-billed-raven" "chihuahuan-raven" "indian-jungle-crow" "somali-crow" "slender-billed-crow" "flores-crow" "rook" "brown-headed-crow" "hawaiian-crow" "tamaulipas-crow" "bismarck-crow" "jamaican-crow" "mariana-crow" "white-necked-crow" "eastern-jungle-crow" "large-billed-crow" "bougainville-crow" "little-raven" "cuban-palm-crow" "new-caledonian-crow" "cuban-crow" "torresian-crow" "fish-crow" "hispaniolan-palm-crow" "palawan-crow" "fan-tailed-raven" "brown-necked-raven" "small-crow" "sinaloa-crow" "house-crow" "forest-raven" "collared-crow" "grey-crow" "piping-crow" "banggai-crow" "long-billed-crow" "violet-crow" "white-billed-crow")
+
+# Percorso dove salvare i file HTML
+output_dir="./crows"
+
+# Modello base per le pagine HTML
+html_template='<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrion Crow | VoCAWbulary - Spot your local fellow crow</title>
+    <title>SPECIES_NAME | VoCAWbulary - Spot your local fellow crow</title>
     <link rel="stylesheet" href="../styles-crows.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,12 +24,12 @@
 <main>
     <header>
         <div class="logo"><a href="../index.html"><img src="../images/raven.webp" alt="Just a regular crow" width="auto" height="80px"></a>        
-        <h1>Carrion Crow</h1>
+        <h1>SPECIES_NAME</h1>
         </div>
     </header>
     <nav>
         <div id="myLinks">
-            <a id ="back-btn" href="../geo-zone/europe.html" class="active"><i class="fa fa-arrow-left"></i> Back to European bros</a>
+            <a id="back-btn" href="../geo-zone/europe.html" class="active"><i class="fa fa-arrow-left"></i> Back to European bros</a>
             <a href="../geo-zone/asia.html">Asia</a> 
             <a href="../geo-zone/north-america.html">North America</a>
             <a href="../geo-zone/south-america.html">South America</a> 
@@ -29,11 +38,11 @@
         </div>
         <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-  </a>
+            <i class="fa fa-bars"></i>
+        </a>
     </nav>
 
-    <h2 class="section-title">This is the Carrion Bro</h2>
+    <h2 class="section-title">This is the SPECIES_NAME Bro</h2>
     <div class="gallery">
         <img src="https://base-prod.rspb-prod.magnolia-platform.com/dam/jcr:247ddd3e-996b-411d-af9d-c03d3e5f888c/1970458931-Species-Carrion-Crow-black-bird-portrait-of-head-and-looking-at-camera_1.jpg" alt="" width="350px">
         <img src="https://base-prod.rspb-prod.magnolia-platform.com/dam/jcr:247ddd3e-996b-411d-af9d-c03d3e5f888c/1970458931-Species-Carrion-Crow-black-bird-portrait-of-head-and-looking-at-camera_1.jpg" alt="" width="350px">
@@ -57,11 +66,13 @@
 </main>
 
 <script src="../script.js"></script>
-
-
 </body>
+</html>'
 
-</html>
-
-
-
+# Crea un file HTML per ogni specie
+for specie in "${species[@]}"
+do
+    file_content="${html_template//SPECIES_NAME/$specie}"
+    echo "$file_content" > "$output_dir/$specie.html"
+    echo "Creato: $output_dir/$specie.html"
+done

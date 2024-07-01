@@ -114,8 +114,9 @@ input {
     width: 120px;
     border-style: solid;
     border-color: #1A4D2E;
-    background-color: white;
+    background-color: #1A4D2E;
     font-weight: 700;
+    color: white;
 
 }
 

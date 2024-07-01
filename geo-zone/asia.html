@@ -8,88 +8,119 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 <main>
     <header>
-        <div class="logo"><a href="../index.html"><img src="../images/raven.webp" alt="Just a regular crow" width="auto" height="80px"></a>        
+        <div class="logo"><a href="../index.html"><img src="../images/raven.webp" alt="Just a regular crow" width="auto" height="100px"></a>
         <h1>Asia</h1>
         </div>
     </header>
     <nav>
-        <a id ="back-btn" href="../index.html"> < Back to home</a>
-        <a href="../geo-zone/asia.html">Asia</a> 
-        <a href="../geo-zone/north-america.html">North America</a>
-        <a href="../geo-zone/south-america.html">South America</a> 
-        <a href="../geo-zone/africa.html">Africa</a>
-        <a href="../geo-zone/oceania.html">Oceania</a> 
+        <div id="myLinks">
+            <a id="back-btn" href="../index.html" class="active"><i class="fa fa-arrow-left"></i> Back to home</a>
+            <a href="../geo-zone/europe.html">Europe</a>
+            <a href="../geo-zone/north-america.html">North America</a>
+            <a href="../geo-zone/south-america.html">South America</a>
+            <a href="../geo-zone/africa.html">Africa</a>
+            <a href="../geo-zone/oceania.html">Oceania</a>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+        </a>
     </nav>
 
-    <h2 class="section-title">Does your crow look like one of this fellas?</h2>
-        <div class="grid-container">
-            <!-- Assuming you have 18 items for a 3x6 grid -->
-            <div class="grid-item">
-                <a href="#"><img src="https://base-prod.rspb-prod.magnolia-platform.com/dam/jcr:247ddd3e-996b-411d-af9d-c03d3e5f888c/1970458931-Species-Carrion-Crow-black-bird-portrait-of-head-and-looking-at-camera_1.jpg" alt=""></a>
-                <h2>Carrion Crow</h2>
-            </div>            
-            <div class="grid-item">
-                <a href="#"><img src="https://base-prod.rspb-prod.magnolia-platform.com/dam/jcr:247ddd3e-996b-411d-af9d-c03d3e5f888c/1970458931-Species-Carrion-Crow-black-bird-portrait-of-head-and-looking-at-camera_1.jpg" alt=""></a>
-                <h2>Carrion Crow</h2>
-            </div>           
-            <div class="grid-item">
-                <a href="#"><img src="https://base-prod.rspb-prod.magnolia-platform.com/dam/jcr:247ddd3e-996b-411d-af9d-c03d3e5f888c/1970458931-Species-Carrion-Crow-black-bird-portrait-of-head-and-looking-at-camera_1.jpg" alt=""></a>
-                <h2>Carrion Crow</h2>
-            </div>           
-            <div class="grid-item">
-                <a href="#"><img src="https://base-prod.rspb-prod.magnolia-platform.com/dam/jcr:247ddd3e-996b-411d-af9d-c03d3e5f888c/1970458931-Species-Carrion-Crow-black-bird-portrait-of-head-and-looking-at-camera_1.jpg" alt=""></a>
-                <h2>Carrion Crow</h2>
-            </div>           
-            <div class="grid-item">
-                <a href="#"><img src="https://base-prod.rspb-prod.magnolia-platform.com/dam/jcr:247ddd3e-996b-411d-af9d-c03d3e5f888c/1970458931-Species-Carrion-Crow-black-bird-portrait-of-head-and-looking-at-camera_1.jpg" alt=""></a>
-                <h2>Carrion Crow</h2>
-            </div>            
-            <div class="grid-item">
-                <a href="#"><img src="https://base-prod.rspb-prod.magnolia-platform.com/dam/jcr:247ddd3e-996b-411d-af9d-c03d3e5f888c/1970458931-Species-Carrion-Crow-black-bird-portrait-of-head-and-looking-at-camera_1.jpg" alt=""></a>
-                <h2>Carrion Crow</h2>
-            </div>           
-            <div class="grid-item">
-                <a href="#"><img src="https://base-prod.rspb-prod.magnolia-platform.com/dam/jcr:247ddd3e-996b-411d-af9d-c03d3e5f888c/1970458931-Species-Carrion-Crow-black-bird-portrait-of-head-and-looking-at-camera_1.jpg" alt=""></a>
-                <h2>Carrion Crow</h2>
-            </div>           
-            <div class="grid-item">
-                <a href="#"><img src="https://base-prod.rspb-prod.magnolia-platform.com/dam/jcr:247ddd3e-996b-411d-af9d-c03d3e5f888c/1970458931-Species-Carrion-Crow-black-bird-portrait-of-head-and-looking-at-camera_1.jpg" alt=""></a>
-                <h2>Carrion Crow</h2>
-            </div>   
-            <div class="grid-item">
-                <a href="#"><img src="https://base-prod.rspb-prod.magnolia-platform.com/dam/jcr:247ddd3e-996b-411d-af9d-c03d3e5f888c/1970458931-Species-Carrion-Crow-black-bird-portrait-of-head-and-looking-at-camera_1.jpg" alt=""></a>
-                <h2>Carrion Crow</h2>
-            </div>            
-            <div class="grid-item">
-                <a href="#"><img src="https://base-prod.rspb-prod.magnolia-platform.com/dam/jcr:247ddd3e-996b-411d-af9d-c03d3e5f888c/1970458931-Species-Carrion-Crow-black-bird-portrait-of-head-and-looking-at-camera_1.jpg" alt=""></a>
-                <h2>Carrion Crow</h2>
-            </div>           
-            <div class="grid-item">
-                <a href="#"><img src="https://base-prod.rspb-prod.magnolia-platform.com/dam/jcr:247ddd3e-996b-411d-af9d-c03d3e5f888c/1970458931-Species-Carrion-Crow-black-bird-portrait-of-head-and-looking-at-camera_1.jpg" alt=""></a>
-                <h2>Carrion Crow</h2>
-            </div>           
-            <div class="grid-item">
-                <a href="#"><img src="https://base-prod.rspb-prod.magnolia-platform.com/dam/jcr:247ddd3e-996b-411d-af9d-c03d3e5f888c/1970458931-Species-Carrion-Crow-black-bird-portrait-of-head-and-looking-at-camera_1.jpg" alt=""></a>
-                <h2>Carrion Crow</h2>
-            </div>   
-
-
+    <h2 class="section-title">Does your crow look like one of these fellas?</h2>
+    <div class="grid-container">
+        <!-- Indian Jungle Crow -->
+        <div class="grid-item">
+            <a href="../crows/indian-jungle-crow.html"><img src="https://base-prod.rspb-prod.magnolia-platform.com/dam/jcr:247ddd3e-996b-411d-af9d-c03d3e5f888c/1970458931-Species-Carrion-Crow-black-bird-portrait-of-head-and-looking-at-camera_1.jpg" alt=""></a>
+            <h2>Indian Jungle Crow</h2>
+            <p><i>Corvus culminatus</i></p>
         </div>
+        <!-- Slender-billed Crow -->
+        <div class="grid-item">
+            <a href="../crows/slender-billed-crow.html"><img src="https://base-prod.rspb-prod.magnolia-platform.com/dam/jcr:247ddd3e-996b-411d-af9d-c03d3e5f888c/1970458931-Species-Carrion-Crow-black-bird-portrait-of-head-and-looking-at-camera_1.jpg" alt=""></a>
+            <h2>Slender-billed Crow</h2>
+            <p><i>Corvus enca</i></p>
+        </div>
+        <!-- Flores Crow -->
+        <div class="grid-item">
+            <a href="../crows/flores-crow.html"><img src="https://base-prod.rspb-prod.magnolia-platform.com/dam/jcr:247ddd3e-996b-411d-af9d-c03d3e5f888c/1970458931-Species-Carrion-Crow-black-bird-portrait-of-head-and-looking-at-camera_1.jpg" alt=""></a>
+            <h2>Flores Crow</h2>
+            <p><i>Corvus florensis</i></p>
+        </div>
+        <!-- Eastern Jungle Crow -->
+        <div class="grid-item">
+            <a href="../crows/eastern-jungle-crow.html"><img src="https://base-prod.rspb-prod.magnolia-platform.com/dam/jcr:247ddd3e-996b-411d-af9d-c03d3e5f888c/1970458931-Species-Carrion-Crow-black-bird-portrait-of-head-and-looking-at-camera_1.jpg" alt=""></a>
+            <h2>Eastern Jungle Crow</h2>
+            <p><i>Corvus levaillantii</i></p>
+        </div>
+        <!-- Large-billed Crow -->
+        <div class="grid-item">
+            <a href="../crows/large-billed-crow.html"><img src="https://base-prod.rspb-prod.magnolia-platform.com/dam/jcr:247ddd3e-996b-411d-af9d-c03d3e5f888c/1970458931-Species-Carrion-Crow-black-bird-portrait-of-head-and-looking-at-camera_1.jpg" alt=""></a>
+            <h2>Large-billed Crow</h2>
+            <p><i>Corvus macrorhynchos</i></p>
+        </div>
+        <!-- Palawan Crow -->
+        <div class="grid-item">
+            <a href="../crows/palawan-crow.html"><img src="https://base-prod.rspb-prod.magnolia-platform.com/dam/jcr:247ddd3e-996b-411d-af9d-c03d3e5f888c/1970458931-Species-Carrion-Crow-black-bird-portrait-of-head-and-looking-at-camera_1.jpg" alt=""></a>
+            <h2>Palawan Crow</h2>
+            <p><i>Corvus pusillus</i></p>
+        </div>
+        <!-- Brown-necked Raven -->
+        <div class="grid-item">
+            <a href="../crows/brown-necked-raven.html"><img src="https://base-prod.rspb-prod.magnolia-platform.com/dam/jcr:247ddd3e-996b-411d-af9d-c03d3e5f888c/1970458931-Species-Carrion-Crow-black-bird-portrait-of-head-and-looking-at-camera_1.jpg" alt=""></a>
+            <h2>Brown-necked Raven</h2>
+            <p><i>Corvus ruficollis</i></p>
+        </div>
+        <!-- Small Crow -->
+        <div class="grid-item">
+            <a href="../crows/small-crow.html"><img src="https://base-prod.rspb-prod.magnolia-platform.com/dam/jcr:247ddd3e-996b-411d-af9d-c03d3e5f888c/1970458931-Species-Carrion-Crow-black-bird-portrait-of-head-and-looking-at-camera_1.jpg" alt=""></a>
+            <h2>Small Crow</h2>
+            <p><i>Corvus samarensis</i></p>
+        </div>
+        <!-- Collared Crow -->
+        <div class="grid-item">
+            <a href="../crows/collared-crow.html"><img src="https://base-prod.rspb-prod.magnolia-platform.com/dam/jcr:247ddd3e-996b-411d-af9d-c03d3e5f888c/1970458931-Species-Carrion-Crow-black-bird-portrait-of-head-and-looking-at-camera_1.jpg" alt=""></a>
+            <h2>Collared Crow</h2>
+            <p><i>Corvus torquatus</i></p>
+        </div>
+        <!-- Piping Crow -->
+        <div class="grid-item">
+            <a href="../crows/piping-crow.html"><img src="https://base-prod.rspb-prod.magnolia-platform.com/dam/jcr:247ddd3e-996b-411d-af9d-c03d3e5f888c/1970458931-Species-Carrion-Crow-black-bird-portrait-of-head-and-looking-at-camera_1.jpg" alt=""></a>
+            <h2>Piping Crow</h2>
+            <p><i>Corvus typicus</i></p>
+        </div>
+        <!-- Banggai Crow -->
+        <div class="grid-item">
+            <a href="../crows/banggai-crow.html"><img src="https://base-prod.rspb-prod.magnolia-platform.com/dam/jcr:247ddd3e-996b-411d-af9d-c03d3e5f888c/1970458931-Species-Carrion-Crow-black-bird-portrait-of-head-and-looking-at-camera_1.jpg" alt=""></a>
+            <h2>Banggai Crow</h2>
+            <p><i>Corvus unicolor</i></p>
+        </div>
+        <!-- Long-billed Crow -->
+        <div class="grid-item">
+            <a href="../crows/long-billed-crow.html"><img src="https://base-prod.rspb-prod.magnolia-platform.com/dam/jcr:247ddd3e-996b-411d-af9d-c03d3e5f888c/1970458931-Species-Carrion-Crow-black-bird-portrait-of-head-and-looking-at-camera_1.jpg" alt=""></a>
+            <h2>Long-billed Crow</h2>
+            <p><i>Corvus validus</i></p>
+        </div>
+        <!-- Violet Crow -->
+        <div class="grid-item">
+            <a href="../crows/violet-crow.html"><img src="https://base-prod.rspb-prod.magnolia-platform.com/dam/jcr:247ddd3e-996b-411d-af9d-c03d3e5f888c/1970458931-Species-Carrion-Crow-black-bird-portrait-of-head-and-looking-at-camera_1.jpg" alt=""></a>
+            <h2>Violet Crow</h2>
+            <p><i>Corvus violaceus</i></p>
+        </div>
+    </div>
 
-        
     <footer>
         <p>Handcrafted by <strong>Lorena</strong> for fun</p>
         <p>image credits @designollo</p>
     </footer>
 </main>
 
+<script src="../script.js"></script>
+
 </body>
-
 </html>
-
-
-
