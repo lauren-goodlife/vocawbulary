@@ -93,7 +93,8 @@ nav a.icon {
 }
 
 .grid-item {
-    flex: 1 1 calc(33.333% - 20px); /* 33.333% to create 3 columns; subtracting the gap */
+    flex: 1 1 auto; /* 33.333% to create 3 columns; subtracting the gap */
+    max-width: 250px;
     background-color: #1A4D2E;
     color: #F5EFE6;
     text-align: center;
@@ -102,11 +103,12 @@ nav a.icon {
 }
 
 .grid-item h2 {
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
 .grid-item p {
 padding: 3px;
+font-size: 0.8em;
 }
 
 
@@ -115,9 +117,6 @@ padding: 3px;
     width: 100%;
 }
 
-.grid-container:nth-last-child() {
-    width: 800px;
-}
 
 footer {
     position: relative;
@@ -139,8 +138,14 @@ footer p {
 /* Mobile stuff */
 
 @media (min-width: 769px) and (max-width: 999px) {
+
+    .grid-container {
+        flex-direction: column;
+        width: 100%;
+    }
     .grid-item {
-        flex: 1 1 calc(50% - 20px); /* 50% to create 2 columns; subtracting the gap */
+        flex: 1; /* 50% to create 2 columns; subtracting the gap */
+        max-width: 100%;
     }
 }
 
@@ -174,6 +179,7 @@ footer p {
     
     .grid-item {
         flex: 1; /* 1 to create 1 column */
+        max-width: 100%;
     }
     
     .grid-item img {
