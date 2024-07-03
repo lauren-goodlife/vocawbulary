@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Mono", monospace;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+  }
+
+
+main {
+    flex: 1;
+    display: flex;
+  }
+
+roboto-mono-font {
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+header {
+    display: flex;
+    text-align: center;
+    padding: 20px;
+    font-size: 2em;
+    background-color: #E8DFCA;
+    border: 0px;
+    flex-direction: column;
+}
+
+
+
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.logo img {
+    padding: 5px;
+    margin-right: 10px; 
+}
+
+
+
+
+
+
+
+
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid-item {
+    padding: 16px;
+    width: 300px;
+}
+
+.grid-item h2 {
+    font-size: 1.1em;
+}
+
+.grid-item p {
+padding: 3px;
+font-size: 0.8em;
+}
+
+
+.grid-item img {
+    border-radius: 20px;
+    width: 100%;
+}
+
+
+footer {
+    display: flex;
+    padding: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    background-color: #1A4D2E;
+}
+
+footer p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

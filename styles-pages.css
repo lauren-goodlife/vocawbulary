@@ -119,7 +119,6 @@ font-size: 0.8em;
 
 
 footer {
-    position: relative;
     display: flex;
     padding: 20px;
     flex-direction: row;
@@ -168,9 +167,7 @@ footer p {
         height: 80px;
     }
 
-    footer {
-        position: relative; 
-    }
+
 
     .grid-container {
         flex-direction: column;
