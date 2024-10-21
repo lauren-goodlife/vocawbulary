@@ -1,13 +1,31 @@
-function myFunction() {
-    var x = document.getElementById("myLinks");
-    if (x.style.display === "block") {
-      x.style.display = "none";
-    } else {
-      x.style.display = "block";
-    }
+function searchForCrow() {
+    // Ottieni il valore dell'input e convertilo in minuscolo
+    let query = document.getElementById('searchInput').value.toLowerCase().trim();
+    
+    // Rimuovi eventuali spazi o caratteri indesiderati, ad esempio spazi vuoti tra le parole
+    query = query.replace(/\s+/g, '-'); // sostituisce spazi con trattini
+    
+    // Costruisci l'URL dinamicamente
+    const baseUrl = "https://lauren-goodlife.github.io/vocawbulary/crows/";
+    const fullUrl = `${baseUrl}${query}.html`;
+
+    // Esegui una richiesta per verificare se la pagina esiste
+    fetch(fullUrl)
+      .then(response => {
+        if (response.ok) {
+          // Se la pagina esiste, reindirizza
+          window.location.href = fullUrl;
+        } else {
+          // Se non esiste, mostra un messaggio di errore
+          alert('Specie non trovata. Prova un nome diverso.');
+        }
+      })
+      .catch(error => {
+        console.error('Errore durante la ricerca:', error);
+        alert('Errore durante la ricerca. Riprova.');
+      });
   }
 
-  
 
 
 
